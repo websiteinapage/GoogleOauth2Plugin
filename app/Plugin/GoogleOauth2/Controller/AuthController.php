@@ -42,8 +42,8 @@ class AuthController extends GoogleOauth2AppController {
         parent::beforeFilter();
         // set client credentials - can be pulled from database
         $this->config = array(
-            'client_id'=>'1025768789879.apps.googleusercontent.com',
-            'client_secret'=>'VcuJ-rJqTu6LYnERPlIWLnUW'
+            'client_id'=>'<CLIENT_ID>',
+            'client_secret'=>'<CLIENT_SECRET>'
         );
         // set redirect URL
         $this->config['redirect_url'] = SITE_BASE . "google_oauth2/auth/connect";
